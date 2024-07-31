@@ -15,6 +15,26 @@ import clsx from 'clsx';
 
 // ...
 
+// Define the links array
+const links = [
+    {
+        name: 'Home',
+        href: '/',
+        icon: HomeIcon,
+    },
+    {
+        name: 'Users',
+        href: '/users',
+        icon: UserGroupIcon,
+    },
+    {
+        name: 'Documents',
+        href: '/documents',
+        icon: DocumentDuplicateIcon,
+    },
+    // Add more links as needed
+];
+
 export default function NavLinks() {
     const pathname = usePathname();
     return (
